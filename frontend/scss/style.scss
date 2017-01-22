@@ -1,0 +1,108 @@
+/**
+ * Imports
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+
+/**
+ * Variables
+ */
+
+ $font: 'Lato';
+ $blue: #2E3641;
+ $background: #E9F0F4;
+ $white: #FFFFFF;
+ $done: #9eb2c0;
+ $border: #879099;
+
+ /**
+  * Styles
+  */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: $background;
+	font-family: $font;
+	font-size: 14px;
+}
+
+#to-do-table {
+	border-collapse: collapse;
+	display: flex;
+	justify-content: center;
+}
+
+.main-row {
+	background: $blue;
+	color: $white;
+	height: 36px;
+	border: 1px solid $blue;
+}
+
+.col-1, .col-2, {
+	border-right: 1px solid $border;
+}
+
+.col-1 {
+	width: 30px;
+	text-align: center;
+}
+
+.col-2 {
+	width: 3px;
+}
+
+.col-3 {
+	width: 286px;
+	padding-left: 10px;
+}
+
+#default-row, .row {
+	height: 28px;
+	background: $white;
+	border: 1px solid #dbdbdb;
+}
+
+.check {
+	width: 100%;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#text-input {
+	border: 0;
+	outline: none;
+	width: 90%;
+}
+
+#new-task {
+	width: 200px;
+}
+
+#trash-ico {
+	float: right;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.border-color {
+	border-right: 1px solid #f2e3df;
+}
+
+#plus-icon {
+	cursor: pointer;
+}
+
+.is-done {
+	text-decoration: line-through;
+	color: $done;
+}
+
+
+.no-done {
+	color: $blue;
+}
