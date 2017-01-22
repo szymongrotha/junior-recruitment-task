@@ -7,25 +7,19 @@
 body {
 	background: #E9F0F4;
 	font-family: Lato;
+	font-size: 14px;
 }
 
-.to-do-table {
+#to-do-table {
 	border-collapse: collapse;
-}
-
-#todolist {
 	display: flex;
-	width: 100%;
-	height:100%;
 	justify-content: center;
-	align-content: center;
 }
 
 .main-row {
 	background: #2E3641;
 	color: #FFF;
 	height: 36px;
-	font-size: 14px;
 	border: 1px solid #2E3641;
 }
 
@@ -47,7 +41,7 @@ body {
 	padding-left: 10px;
 }
 
-.row {
+#default-row, .row {
 	height: 28px;
 	background: #FFF;
 	border: 1px solid #dbdbdb;
@@ -57,13 +51,22 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	cursor: pointer;
-	display: none;
 }
 
-.text-input {
+#text-input {
 	border: 0;
 	outline: none;
 	width: 90%;
+}
+
+#new-task {
+	width: 200px;
+}
+
+#trash-ico {
+	float: right;
+	padding-right: 20px;
+	cursor: pointer;
 }
 
 .border-color {
@@ -72,4 +75,14 @@ body {
 
 #plus-icon {
 	cursor: pointer;
+}
+
+.is-done {
+	text-decoration: line-through;
+	color: #9eb2c0;
+}
+
+
+.no-done {
+	color: #2e3641;
 }

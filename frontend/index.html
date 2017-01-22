@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
 	<title>Qunabu Junior Task</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="author" content="Szymon Grotha">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div id='todolist'>
-		<table class="to-do-table">
+		<table id="to-do-table">
 			<tr class="main-row">
 				<td class="col-1"></td>
 				<td class="col-2"></td>
 				<td class="col-3">ToDo List</td>
 			</tr>
-			<tr class="row">
-				<td class="col-1 border-color"><input class="check" type="checkbox"><img src="img/plus.png" id="plus-icon" alt="plus icon"></td></td>
+			<tr id="default-row">
+				<td class="col-1 border-color"><img src="img/plus.png" id="plus-icon" alt="plus icon"></td></td>
 				<td class="col-2 border-color"></td>
-				<td class="col-3"><input class="text-input" type="text"><img class="trash-ico" src="img/trash.png" alt="trash icon"></td>
+				<td class="col-3"><input id="text-input" type="text" maxlength="35" placeholder="Uzupełnij pole">
 			</tr>
 		</table>
 	</div>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/pouchdb/6.1.1/pouchdb.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<script type="text/javascript" src="../backend/app.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
